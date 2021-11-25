@@ -6,7 +6,7 @@ resource "aws_route_table" "useogi_rt" {
         gateway_id = aws_internet_gateway.useogi_ig.id
     }
 
-    tags {
+    tags = {
         "Name" = "useogi-rt"
     }
 }
