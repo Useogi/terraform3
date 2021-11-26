@@ -8,3 +8,7 @@ resource "aws_lb" "useogi_alb" {
         "Name" = "useogi-alb"
     }
 }
+
+output "dns_name" {
+    value = aws_lb.useogi_alb.dns_name
+}
